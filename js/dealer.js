@@ -23,9 +23,9 @@ var dealer =
 
             else
               {
-                dealCard1(player),
+                dealCard(player),
                 setTimeout(function(){dealCard(dealer);}, 300),
-                setTimeout(function(){dealCard1(player);}, 700),
+                setTimeout(function(){dealCard(player);}, 700),
                 setTimeout(function(){dealFacedown(dealer);}, 1000),
                 setTimeout(function(){checkForBlackjack(player);}, 1100); //this function decides whether player.playing is true or fase BJ = false ofcourse
                 setTimeout(function(){checkForSplit(player);}, 1200);
