@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>♠BLACKJACK♣</title>
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/BJStylesheet.css">
+  <link rel="stylesheet" type="text/css" href="css/tableSS.css">
+  <link rel="stylesheet" type="text/css" href="css/button_controls_SS.css">
+  <link rel="stylesheet" type="text/css" href="css/cardSS.css">
+  <link rel="stylesheet" type="text/css" href="css/DPSS.css">
+</head>
+
+<body>
+  
+<div class="announcer">
+  <div id="resultPW">PLAYER WINS</div> 
+  <div id="resultDW">DEALER WINS</div> 
+  <div id="resultP">PUSH</div> 
+  <div id="resultBJ">BLACKJACK</div> 
+</div> 
+
+  <div id="table">
+      <div id="feltDesign">
+         <h1>♠BLACKJACK♣</h1>
+        
+            <span class="design char1"></span>
+            <span class="design char2"></span>
+            <span class="design char3"></span>
+            <span class="design char4">~</span>
+            <span class="design char5">P</span>
+            <span class="design char6">A</span>
+            <span class="design char7">Y</span>
+            <span class="design char8">S</span>
+            <span class="design char9">*</span>
+            <span class="design char10">3</span>
+            <span class="design char11">t</span>
+            <span class="design char12">o</span>
+            <span class="design char13">2</span>
+            <span class="design char14">~</span>
+            <span class="design char15"></span>
+            <span class="design char16"></span>
+            <span class="design char17"></span>
+          
+        </div>
+    </div> 
+   <div id="playerCircles">
+    <div class="player p1"><span>coming soon</span></div>
+    <div class="player p2"><span>coming soon</span></div>
+    <div class="player p3"></div>
+    <div class="player p4"><span>coming soon</span></div>
+    <div class="player p5"><span>coming soon</span></div>
+   </div>
+
+<!--************DEALERS AREA*****************-->
+  <div id="dealerHand">
+
+  </div>
+
+<div id="dealerTotal"></div>
+
+
+<!--************PLAYING AREA*****************-->
+<div id="playerHand">
+</div>
+
+<div id="playerTotal"></div>
+
+  <div id="chipRack">
+    <button class="bet bet1">0.5</button>
+    <button class="bet bet2">1</button>
+    <button class="bet bet3">5</button>
+    <button class="bet bet4">10</button>
+    <button class="bet bet5">25</button>
+    <button class="bet bet6">100</button>
+    <button class="bet bet7">250</button>
+    <button id="clearBet">clear</button>
+  </div>
+
+<div id="splitArea">
+  <div id="split" class="button"><img title = Split class="click" src="css/png/split.png"></div>
+  <div class="split">Split</div>
+</div>
+
+<div id="controls">
+
+  <div id="double" class="button"><img title = Double class = "click" src="css/png/double.png"></div>
+  <div id="stand" class="button"><img title = Stand class = "click" src="css/png/stand.png"></div>
+  <div id="hit" class="button"><img title = Hit class = "click" src="css/png/hit2.png"></div>
+  <div id="rebet" class="button"><img title = Re-bet class = "click" src="css/png/rebet2.png"></div>
+  <div id="start" class="button"><img title = Deal class = "click" src="css/png/deal.png"></div>
+  <div id="reset" class="button"><img title = Reset class = "click" src="css/png/rebet1.png"></div>
+  
+</div>
+
+  <div id="buttonTitles">
+    <div class="double">Double</div>
+    <div class="stand">Stand</div>
+    <div class="hit">Hit</div>
+    <div class="rebet">Rebet</div>
+    <div class="start">Deal</div>
+    <div class="reset">New Game</div>
+  </div>
+
+  <div id="score_panel">
+    <div> BET: $<span id="bet"></span></div>
+    <div> BANK: $<span id="bank"></span></div>
+  </div>
+  
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="js/blackjack.js"></script>
+<script src="js/dealer.js"></script>
+<script src="js/player.js"></script>
+<script src="js/wallet.js"></script>
+<script src="js/controls.js"></script>
+<script type="text/javascript"> // animations of buttons no laying functions here
+$(function() {
+
+  $('div.button').on("mousedown", function(e){
+    var ID = e.currentTarget.id;
+    $('div#'+ ID + '.button').addClass('pressed');
+  });
+
+  $('div.button').hover(function(e){
+    var ID = e.currentTarget.id;
+    $('div.'+ ID).addClass('grow');
+  });
+
+  $('div.button').on("mouseup mouseleave", function(e){
+    var ID = e.currentTarget.id;
+    $('div#'+ ID + '.button').removeClass('pressed');
+    $('div#buttonTitles > div.'+ ID).removeClass('grow');
+    $('div.split').removeClass('grow');
+  });
+
+  $('div.announcer').on("click", function(){
+    $('div.announcer > div.display').removeClass('display');
+    $('div.announcer').removeClass('announce');
+    });
+
+});
+
+</script>
+</body>
+
+</html>
+
+

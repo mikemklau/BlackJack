@@ -1,0 +1,128 @@
+html{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.announcer{
+  position:absolute;
+  background-color: rgba(0,0,0,0.0);
+  width: 1680px;
+  height: 800px;
+  z-index: 100;
+  visibility: hidden;
+  transition: background-color 0.4s ease-in-out;
+}
+
+div.announcer.announce{
+  background-color: rgba(0,0,0,0.2);
+  visibility: visible;
+}
+
+div.announcer div{
+  position:absolute;
+  font-size: 700%;
+  left:375px;
+  top:150px;
+  font-family: serif;
+  background: -webkit-linear-gradient(#eee, #e8e8e5, #847732, #FFD700, #282200, #1E1900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  visibility: hidden;
+}
+
+div#resultPW{
+  
+}
+
+div#resultPW.display{
+  visibility: visible;
+}
+
+div#resultDW{
+  background: -webkit-linear-gradient(#fefefe, #C0C0C0, #47464A, #95998E, #fefefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+div#resultDW.display{
+  visibility: visible;
+}
+
+div#resultP{
+  background: -webkit-linear-gradient(#fefefe, #DE9959, #B87333, #754B24, #FCB472, #F5DBC4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left:575px;
+}
+
+div#resultP.display{
+  visibility: visible;
+}
+
+div#resultBJ{
+  left:415px;
+}
+
+div#resultBJ.display{
+  visibility: visible;
+}
+
+/*CHIPS*/
+div#chipRack{
+  position: absolute;
+  width: 300px;
+  left: 850px;
+  top: 384px;
+}
+
+button.bet{
+  border-radius: 50%;
+  font-weight: 800;
+  width: 30px;
+  height: 30px;
+  color:#666;
+  background-color: #fefefe;
+  border: 3px dashed #051919;
+  box-shadow: 2px 2px 1px #111;
+  transition: 0.1s;
+}
+
+button.bet:hover{
+  transform: scale(1.1, 1.1);
+}
+button#bet2{
+  position: relative;
+  bottom: 6px;
+  border-color: #4286f4;
+}
+
+button#bet3{
+  position: relative;
+  bottom: 10px;
+  border-color: #e21e14;
+}
+
+button#bet4{
+  position: relative;
+  bottom: 16px;
+  border-color: #1a7a1e;
+}
+
+button#bet5{
+  position: relative;
+  bottom: 22px;
+  border-color: #ff5bb8;
+}
+
+button#bet6{
+  position: relative;
+  bottom: 30px;
+  border-color: #7838d1;
+}
+
+button#bet7{
+  position: relative;
+  bottom: 40px;
+  border-color: #f4d142;
+}
+

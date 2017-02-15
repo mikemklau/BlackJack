@@ -1,0 +1,616 @@
+
+@-webkit-keyframes grow{
+  0%, 100%   { transform: scale(1,1); }
+  50% { transform: scale(1.1,1.1); }
+}
+@-moz-keyframes grow{
+  0%, 100%   { transform: scale(1,1); }
+  50% { transform: scale(1.1,1.1); }
+}
+@-o-keyframes grow{
+  0%, 100%   { transform: scale(1,1); }
+  50% { transform: scale(1.1,1.1); }
+}
+@keyframes grow{
+  0%, 100%   { transform: scale(1,1); }
+  50% { transform: scale(1.1,1.1); }
+}
+
+@-webkit-keyframes bounce{
+  0%, 100%   { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+@-moz-keyframes bounce{
+  0%, 100%   { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+@-o-keyframes bounce{
+  0%, 100%   { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes bounce{
+  0%, 100%   { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.grow{/*anything that I add this to will grow*/
+  -webkit-animation: grow .9s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: grow .9s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: grow.9s ease-in-out infinite; /* Opera 12+ */
+  animation: grow .9s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+.bounce{/*anything that I add this to will grow*/
+  -webkit-animation: bounce .9s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: bounce .9s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: bounce.9s ease-in-out infinite; /* Opera 12+ */
+  animation: bounce .9s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+.bust{
+  color: red;
+}
+
+div#controls{
+  position: absolute;
+  bottom:80px;
+  left:460px;
+  width: 700px;
+  z-index: 101;
+}
+
+div.button{
+  border: solid 1px rgba(100,100,100,0.5);
+  margin: 0px 2px;
+  width: 100px;
+  height:100px;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px #111;
+}
+
+div.button:hover{
+  border: solid 1px rgba(100,100,100,0.9);
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #111;
+  -webkit-animation: bounce .9s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: bounce .9s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: bounce.9s ease-in-out infinite; /* Opera 12+ */
+  animation: bounce .9s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+div.s_button{
+  border: solid 1px rgba(100,100,100,0.5);
+  margin: 0px 2px;
+  width: 100px;
+  height:100px;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px #111;
+  /*transform: scale(1.5,1.5);*/
+}
+
+div.s_button:hover{
+  border: solid 1px rgba(100,100,100,0.9);
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #111;
+  -webkit-animation: bounce .7s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: bounce .7s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: bounce.7s ease-in-out infinite; /* Opera 12+ */
+  animation: bounce .7s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+img.click{
+  margin-top:15px;
+  margin-left: 15px;
+  height: 70px;
+  width:70px;
+  color: #6390d8;
+  cursor:pointer;
+}
+
+div.button.pressed{
+  animation: none;
+  box-shadow: inset 0px 0px 4px #111;
+  border:solid 1px rgba(100,100,100,0.2);
+}
+
+div.s_button.pressed{
+  animation: none;
+  box-shadow: inset 0px 0px 4px #111;
+  border:solid 1px rgba(100,100,100,0.2);
+}
+
+div#stand > img{
+  margin-left: 11px;
+  width: 75px;
+}
+
+div#hit > img{
+  margin-left: 13px;
+}
+
+div#reset.button{
+  visibility: hidden;
+  -webkit-animation: bounce .8s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: bounce .8s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: bounce.8s ease-in-out infinite; /* Opera 12+ */
+  animation: bounce .8s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+div#reset.button.available{
+  visibility: visible;
+}
+
+div.reset{
+  visibility: hidden;
+}
+
+div.reset.available{
+  visibility: visible;
+}
+div#splitArea{
+  position:absolute;
+  bottom:210px;
+  left:670px;
+  font-family:'Arima Madurai', cursive;
+  font-weight: 800;
+  color:#999;
+  z-index: 102;
+  visibility: hidden;
+}
+
+div#splitArea.available{
+  visibility: visible;
+}
+
+div#split.bounce{
+  -webkit-animation: bounce .9s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: bounce .9s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: bounce.9s ease-in-out infinite; /* Opera 12+ */
+  animation: bounce .9s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+div.split{
+  position:relative;
+  text-align: center;
+  top:15px;
+}
+
+div.split.grow{
+  -webkit-animation: grow .9s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: grow .9s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: grow.9s ease-in-out infinite; /* Opera 12+ */
+  animation: grow .9s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+/************CHIP AREA**************/
+div#chipRack{
+  position: absolute;
+  width: 300px;
+  left: 950px;
+  top: 380px;
+}
+
+button.bet{
+  border-radius: 50%;
+  font-weight: 800;
+  width: 30px;
+  height: 30px;
+  color:#666;
+  background-color: #fefefe;
+  border: 3px dashed #051919;
+  box-shadow: 2px 2px 1px #111;
+  transition: 0.1s;
+  outline: none;
+  cursor: pointer;
+}
+
+button.bet:hover{
+  -webkit-animation: grow .9s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: grow .9s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: grow.9s ease-in-out infinite; /* Opera 12+ */
+  animation: grow .9s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+button.bet2{
+  position: relative;
+  bottom: 6px;
+  border-color: #4286f4;
+}
+
+button.bet3{
+  position: relative;
+  bottom: 11px;
+  border-color: #e21e14;
+}
+
+button.bet4{
+  position: relative;
+  bottom: 17px;
+  border-color: #1a7a1e;
+}
+
+button.bet5{
+  position: relative;
+  bottom: 24px;
+  border-color: #ff5bb8;
+}
+
+button.bet6{
+  position: relative;
+  bottom: 34px;
+  border-color: #7838d1;
+}
+
+button.bet7{
+  position: relative;
+  bottom: 44px;
+  border-color: #f4d142;
+}
+
+button#clearBet{
+  position: relative;
+  bottom: 60px;
+  border: 1px solid #111;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-weight: 800;
+  color:#000;
+  background-color: #ffe500;
+  box-shadow: 2px 2px 1px #111;
+  outline: none;
+  cursor:pointer;
+}
+
+button#clearBet:hover{
+  -webkit-animation: grow .9s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: grow .9s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: grow.9s ease-in-out infinite; /* Opera 12+ */
+  animation: grow .9s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+/************BUTTON TITLES **************/
+
+div#buttonTitles{
+  position: absolute;
+  left: 460px;
+  margin: 0px 3px;
+  height:30px;
+  bottom: 35px;
+  width: 700px;
+}
+
+div#buttonTitles > div{
+  text-align: center;
+  font-family:'Arima Madurai', cursive;
+  font-weight: 800;
+  display: inline-block;
+  color:#999;
+  margin: 0px 3px;
+  width: 100px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0);
+}
+
+
+div#buttonTitles > div.grow{
+  -webkit-animation: grow .9s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: grow .9s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: grow.9s ease-in-out infinite; /* Opera 12+ */
+  animation: grow .9s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+/************SCOREBOARD AREA**************/
+div#score_panel{
+  position:absolute;
+  width: 300px;
+  height: 150px;
+  font-size: 110%;
+  background-color: rgba(30,30,30,0.2);
+  border: none;
+  box-shadow: none;
+  left: 50px;
+  bottom:50px;
+  border-radius: 30px;
+}
+
+
+div#score_panel > div {
+  position: relative;
+  font-family: 'Arima Madurai', cursive;
+  padding-left: 40px;
+  top:30px;
+  color: #399b37;
+  font-size: 200%;
+}
+
+
+@media only screen and (max-width: 1450px){
+  div#buttonTitles{
+    left: 300px;
+  }
+
+  div#buttonTitles > div{
+    width: 80px;
+  }
+
+  div#controls{
+    bottom:80px;
+    left:300px;
+  }
+
+  div.button{
+    width: 80px;
+    height:80px;
+  }
+
+  div.s_button{
+    width: 80px;
+    height:80px;
+  }
+
+  img.click{
+    margin-top:10px;
+    margin-left: 10px;
+    height: 60px;
+    width:60px;
+    color: #6390d8;
+    cursor:pointer;
+  }
+
+  div#stand > img{
+    margin-left: 5px;
+    width: 65px;
+  }
+
+  div#hit > img{
+    margin-left: 7px;
+  }
+
+  div#splitArea{
+    position:absolute;
+    bottom:180px;
+    left:480px;
+    font-family:'Arima Madurai', cursive;
+    font-weight: 800;
+    color:#999;
+    z-index: 102;
+    visibility: ;
+  }
+
+  div#chipRack{
+    position: absolute;
+    width: 300px;
+    left: 650px;
+    top: 290px;
+    }
+
+  div#score_panel{
+  width: 200px;
+  height: 80px;
+  font-size: 80%;
+  background-color: rgba(30,30,30,0.2);
+  border: none;
+  box-shadow: none;
+  left: 50px;
+  bottom:80px;
+  border-radius: 30px;
+  }
+
+  div#score_panel > div {
+    position: relative;
+    font-family: 'Arima Madurai', cursive;
+    padding-left: 10px;
+    top:5px;
+    color: #399b37;
+    font-size: 200%;
+  }
+}
+
+@media only screen and (max-width: 1450px){
+  div#buttonTitles{
+    left: 300px;
+  }
+
+  div#buttonTitles > div{
+    width: 80px;
+  }
+
+  div#controls{
+    bottom:80px;
+    left:300px;
+  }
+
+  div.button{
+    width: 80px;
+    height:80px;
+    }
+
+  img.click{
+    margin-top:10px;
+    margin-left: 10px;
+    height: 60px;
+    width:60px;
+    color: #6390d8;
+    cursor:pointer;
+  }
+
+  div#stand > img{
+    margin-left: 5px;
+    width: 65px;
+  }
+
+  div#hit > img{
+    margin-left: 7px;
+  }
+
+  div#chipRack{
+    position: absolute;
+    width: 300px;
+    left: 650px;
+    top: 290px;
+    }
+
+  div#score_panel{
+  width: 200px;
+  height: 80px;
+  font-size: 80%;
+  background-color: rgba(30,30,30,0.2);
+  border: none;
+  box-shadow: none;
+  left: 50px;
+  bottom:80px;
+  border-radius: 30px;
+  }
+
+  div#score_panel > div {
+    position: relative;
+    font-family: 'Arima Madurai', cursive;
+    padding-left: 10px;
+    top:5px;
+    color: #399b37;
+    font-size: 200%;
+  }
+
+  div#splitArea{
+    position:absolute;
+    bottom:180px;
+    left:480px;
+    font-family:'Arima Madurai', cursive;
+    font-weight: 800;
+    color:#999;
+    z-index: 102;
+    visibility: hidden;
+  }
+
+}
+
+@media only screen and (max-width: 700px) and (max-height: 400px) {
+
+  div#score_panel{
+  position:absolute;
+  background-color: rgba(30,30,30,0.0);
+  left: 0px;
+  bottom:80px;
+  width: 100px;
+  height: 50px;
+}
+
+div#score_panel > div {
+  position: relative;
+  font-family: 'Arima Madurai', cursive;
+  margin: 0px;
+  font-size: 100%;
+}
+
+div#buttonTitles{
+    left:25vw;
+    bottom: 60px;
+  }
+
+  div#buttonTitles > div{
+    width: 40px;
+    font-size: 60%;
+    margin-top: 0px;
+  }
+
+  div#controls{
+    bottom:80px;
+    left:25vw;
+  }
+
+  img.click{
+    margin-top:5px;
+    margin-left: 5px;
+    height: 30px;
+    width:30px;
+    color: #6390d8;
+    cursor:pointer;
+  }
+
+  div#stand > img{
+    margin-left: 3px;
+    width: 30px;
+  }
+
+  div#hit > img{
+    margin-left: 5px;
+  }
+
+  div.button{
+    border-radius: 10px;
+    width: 40px;
+    height:40px;
+  }
+
+  div.s_button{
+    width: 80px;
+    height:80px;
+  }
+
+  button.bet{
+    border-radius: 50%;
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    font-size: 50%;
+  }
+
+  div#chipRack{
+    position: absolute;
+    width: 30px;
+    left: 500px;
+    top: 0px;
+    }
+
+  button.bet{
+  margin-bottom: 3px;
+  margin-left: 5px;
+}
+
+button.bet:hover{
+  -webkit-animation: grow .9s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: grow .9s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: grow.9s ease-in-out infinite; /* Opera 12+ */
+  animation: grow .9s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+button.bet2{
+  position: static;
+  border-color: #4286f4;
+}
+
+button.bet3{
+  position: static;
+  border-color: #e21e14;
+}
+
+button.bet4{
+  position: static;
+  border-color: #1a7a1e;
+}
+
+button.bet5{
+  position: static;
+  border-color: #ff5bb8;
+}
+
+button.bet6{
+  position: static;
+  border-color: #7838d1;
+}
+
+button.bet7{
+  position: static;
+  border-color: #f4d142;
+}
+
+button#clearBet{
+  width: 25px;
+  height: 25px;
+  font-size: 50%;
+  margin-left: 3px;
+  position: static;
+}
+}

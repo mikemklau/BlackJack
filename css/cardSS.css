@@ -1,0 +1,269 @@
+div.playingCard{
+  border:1px solid #222;
+  border-radius: 3px;
+  background-color: rgb(250,250,250);
+  width:65px;
+  height:85px;
+  display: inline-block;
+  vertical-align:top; 
+}
+
+img{
+  padding:1px;
+  width:63px;
+  height:83px;
+}
+
+  div.playingCard{
+    border:1px solid #222;
+    border-radius: 3px;
+    background-color: rgb(250,250,250);
+    width:55px;
+    height:75px;
+    display: inline-block;
+    vertical-align:top; 
+  }
+
+  img{
+    padding:1px;
+    width:53px;
+    height:73px;
+  }
+
+
+/*SPLITS*/
+
+div#split1.splitHand{
+    position: absolute;
+    left: 550px;
+    top: 150px;
+    z-index: 99;
+}
+
+div#split1Total{
+  position: absolute;
+    font-family: sans-serif;
+    color: #fefefe;
+    left: 520px;
+    top: 150px;
+}
+
+div#split2.splitHand{
+  position: absolute;
+    left: 850px;
+    top: 150px;
+    z-index: 99;
+}
+
+div#split2Total{
+  position: absolute;
+    font-family: sans-serif;
+    color: #fefefe;
+    left: 820px;
+    top: 150px;
+}
+
+div#split3.splitHand{
+  position: absolute;
+    left: 1150px;
+    top: 150px;
+    z-index: 99;
+}
+
+div#split3Total{
+  position: absolute;
+    font-family: sans-serif;
+    color: #fefefe;
+    left: 1120px;
+    top: 150px;
+}
+
+div#split4.splitHand{
+  position: absolute;
+    left: 250px;
+    top: 150px;
+    z-index: 99;
+}
+
+div#split4Total{
+  position: absolute;
+    font-family: sans-serif;
+    color: #fefefe;
+    left: 220px;
+    top: 150px;
+}
+
+div#split5.splitHand{
+    position: absolute;
+    left: 250px;
+    top: 10px;
+    z-index: 99;
+}
+
+div#split5Total{
+  position: absolute;
+    font-family: sans-serif;
+    color: #fefefe;
+    left: 220px;
+    top: 10px;
+}
+
+div#split6.splitHand{
+  position: absolute;
+    font-family: sans-serif;
+    color: #fefefe;
+    left: 1000px;
+    top: 10px;
+}
+
+div#split6Total{
+  position: absolute;
+    font-family: sans-serif;
+    color: #fefefe;
+    left: 970px;
+    top: 10px;
+}
+
+div#split7.splitHand{
+  position: absolute;
+  left:100px;
+  top:150px;
+  z-index: 99;
+}
+
+div#split7Total{
+  position: absolute;
+  font-family: sans-serif;
+  color:#fefefe;
+  left:70px;
+  top:150px;
+}
+
+@media only screen and (max-width: 1450px) {
+  div.playingCard{
+    border:1px solid #222;
+    border-radius: 3px;
+    background-color: rgb(250,250,250);
+    width:55px;
+    height:75px;
+    display: inline-block;
+    vertical-align:top; 
+  }
+
+  img{
+    padding:1px;
+    width:53px;
+    height:73px;
+  }
+
+
+/*SPLITS*/
+
+div#split1.splitHand{
+  position: absolute;
+  left:140px;
+  top:150px;
+  z-index: 99;
+}
+
+div#split1Total{
+  position: absolute;
+  font-family: sans-serif;
+  color:#fefefe;
+  left:110px;
+  top:150px;
+}
+
+div#split2.splitHand{
+  position: absolute;
+  left:820px;
+  top:150px;
+  z-index: 99;
+}
+
+div#split2Total{
+  position: absolute;
+  font-family: sans-serif;
+  color:#fefefe;
+  left:790px;
+  top:150px;
+}
+
+div#split3.splitHand{
+  position: absolute;
+  left:140px;
+  top:10px;
+  z-index: 99;
+}
+
+div#split3Total{
+  position: absolute;
+  font-family: sans-serif;
+  color:#fefefe;
+  left:110px;
+  top:10px;
+}
+
+div#split4.splitHand{
+  position: absolute;
+  left:820px;
+  top:10px;
+  z-index: 99;
+}
+
+div#split4Total{
+  position: absolute;
+  font-family: sans-serif;
+  color:#fefefe;
+  left:790px;
+  top:10px;
+}
+
+div#split5.splitHand{
+  position: absolute;
+  left:140px;
+  top:300px;
+  z-index: 99;
+}
+
+div#split5Total{
+  position: absolute;
+  font-family: sans-serif;
+  color:#fefefe;
+  left:110px;
+  top:300px;
+}
+
+div#split6.splitHand{
+  position: absolute;
+  font-family: sans-serif;
+  color:#fefefe;
+  left:820px;
+  top:350px;
+}
+
+div#split6Total{
+  position: absolute;
+  font-family: sans-serif;
+  color:#fefefe;
+  left:790px;
+  top:350px;
+}
+
+div#split7.splitHand{
+  position: absolute;
+  left:100px;
+  top:150px;
+  z-index: 99;
+}
+
+div#split7Total{
+  position: absolute;
+  font-family: sans-serif;
+  color:#fefefe;
+  left:70px;
+  top:150px;
+}
+
+
+}

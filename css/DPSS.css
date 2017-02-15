@@ -1,0 +1,208 @@
+/*DEALER/PLAYER SS*/
+
+/*******DEALER AREAS********/
+
+div#dealerTotal{
+  position: absolute;
+  left:620px;
+  top:85px;
+  width:35px;
+  height: 20px;
+  font-family: sans-serif;
+  color:#fefefe;
+  text-align: center;
+}
+
+div#dealerHand{
+  position:absolute;
+  height: 82px;
+  left:660px;
+  top:10px;
+}
+
+/*******PLAYER  AREAS********/
+
+div#playerTotal{
+  position: absolute;
+  left:620px;
+  top:260px;
+  width:35px;
+  height: 20px;
+  font-family: sans-serif;
+  color:#fefefe;
+  text-align: center;
+}
+
+div#playerHand{
+  position:absolute;
+  left:660px;
+  top:277px;
+}
+
+/*******PLAYER  CIRCLES********/
+div#playerCircles{
+  width:1200px;
+  height: 250px;
+  position: absolute;
+  left:130px;
+  top:150px
+}
+
+div.player{
+  width:100px;
+  border: solid 2px #fefefe;
+  border-radius:50%;
+  height:100px;
+  margin: 0 66px;
+  cursor: pointer;
+  vertical-align:top;
+  text-align: center;
+  font-family: sans-serif;
+  color: rgba(0,0,0,0.0);
+  display:inline-block;
+  border:#999 dotted 2px;
+}
+
+div.player:hover{
+  color: rgba(0,0,0,0.6);
+}
+
+div.player>span{
+  position: relative;
+  top:40px;
+}
+
+div.player.p1{
+  position:relative;
+  top: 30px;
+}
+
+div.player.p1:hover{
+  position:relative;
+  top: 30px;
+  color: rgba(0,0,0,0.6);
+}
+
+div.player.p2{
+  position:relative;
+  top: 90px;
+}
+
+div.player.p2:hover{
+  position:relative;
+  top: 90px;
+  color: rgba(0,0,0,0.6);
+}
+
+div.player.p3{
+  position:relative;
+  top: 120px;
+  border:#999 solid 2px;
+}
+
+div.player.p3:hover{
+  position:relative;
+  top: 120px;
+  border:#fefefe solid 2px;
+}
+
+div.player.p4{
+  position:relative;
+  top: 90px;
+}
+
+div.player.p4:hover{
+  position:relative;
+  top: 90px;
+  color: rgba(0,0,0,0.6);
+}
+
+div.player.p5{
+  position:relative;
+  top: 30px;
+}
+
+div.player.p5:hover{
+  position:relative;
+  top: 30px;
+  color: rgba(0,0,0,0.6);
+}
+
+@media only screen and (max-width: 1450px) {
+  div.player{
+  width:75px;
+  height:75px;
+  margin: 0 44px;
+  cursor: pointer;
+  border:#999 dotted 2px;
+  }
+
+  div#playerCircles{
+  width:1200px;
+  height: 250px;
+  position: absolute;
+  left:100px;
+  top:90px
+  }
+
+  div#dealerTotal{
+  left:435px;
+  top:65px;
+}
+
+div#dealerHand{
+  left:470px;
+  top:10px;
+}
+
+div#playerTotal{
+  position: absolute;
+  left:440px;
+  top:183px;
+  width:35px;
+  height: 20px;
+  font-family: sans-serif;
+  color:#fefefe;
+  text-align: center;
+}
+
+div#playerHand{
+  position:absolute;
+  left: 470px;
+  top:200px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  div#playerCircles{
+  display: none;
+  }
+
+  div#dealerTotal{
+  left:435px;
+  top:65px;
+  }
+
+  div#dealerHand{
+    left:470px;
+    top:10px;
+  }
+
+div#playerTotal{
+  position: absolute;
+  left:440px;
+  top:183px;
+  width:35px;
+  height: 20px;
+  font-family: sans-serif;
+  color:#fefefe;
+  text-align: center;
+}
+
+div#playerHand{
+  position:absolute;
+  left: 470px;
+  top:200px;
+}
+
+}
